@@ -1,7 +1,7 @@
 [README.md](https://github.com/user-attachments/files/21919806/README.md)
 # Volatility & Risk Engine — FTSE 100 ETFs (ISF.L, VUKE.L)
 
-**Status:** learning project (in progress) • **Created:** 2025-08-21
+**Status:** learning project (in progress) • **Created:** 2025-08-12
 
 This repository contains a beginner-friendly Python toolkit for **volatility forecasting** and **risk measurement** on FTSE 100 ETFs (**ISF.L**, **VUKE.L**). It implements simple models and clear evaluation:
 

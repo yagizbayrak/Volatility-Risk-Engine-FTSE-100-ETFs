@@ -1,0 +1,10 @@
+pandas>=2.0
+numpy>=1.25
+scipy>=1.11
+yfinance>=0.2.38
+matplotlib>=3.8
+quantstats>=0.0.62
+arch>=6.4
+statsmodels>=0.14
+streamlit>=1.36
+pytest>=8.0

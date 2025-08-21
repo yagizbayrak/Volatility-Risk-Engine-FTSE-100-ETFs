@@ -1,9 +1,9 @@
 [README.md](https://github.com/user-attachments/files/21919806/README.md)
 # Volatility & Risk Engine — FTSE 100 ETFs (ISF.L, VUKE.L)
 
-**Status:** learning project (in progress) • **Created:** 2025-08-12
+**Status:** learning project (in progress) 
 
-This repository contains a beginner-friendly Python toolkit for **volatility forecasting** and **risk measurement** on FTSE 100 ETFs (**ISF.L**, **VUKE.L**). It implements simple models and clear evaluation:
+This repo contains a Python toolkit for **volatility forecasting** and **risk measurement** on FTSE 100 ETFs.
 
 - **Forecasts:** EWMA and GARCH(1,1), compared against 20‑day realized volatility (metrics: **RMSE**, **QLIKE**).
 - **Risk:** 95%/99% **Value-at-Risk (VaR)** and **Expected Shortfall (ES)** with basic out‑of‑sample coverage tests.
@@ -11,7 +11,7 @@ This repository contains a beginner-friendly Python toolkit for **volatility for
 - **App:** minimal **Streamlit** dashboard for quick exploration.
 - **Reproducibility:** tidy repo layout and a few unit tests.
 
-> ⚠Educational only — **not** financial advice.
+> Educational only — **not** financial advice.
 
 ---
 
@@ -68,7 +68,7 @@ You can change tickers in the sidebar.
 
 ---
 
-## How it works (short)
+## How it works
 
 1. **Load prices** from Yahoo Finance (`yfinance`), compute daily **log returns**.
 2. Compute **realized volatility** over a rolling 20‑day window.
@@ -80,26 +80,6 @@ You can change tickers in the sidebar.
 
 ---
 
-## Notes & caveats
-
-- Yahoo data may have **splits/dividends**; we use `auto_adjust=True`. Validate as needed.
-- For **GARCH**, returns are often scaled (e.g., ×100). See docstrings in `src/models.py`.
-- **Coverage tests** here are simple (Kupiec POF-style count). For production, expand diagnostics.
-
----
-
-## Push to GitHub
-
-```bash
-git init
-git add .
-git commit -m "Init: FTSE volatility & risk engine scaffold"
-git branch -M main
-git remote add origin YOUR_REPO_URL
-git push -u origin main
-```
-
----
 
 ## License
 
